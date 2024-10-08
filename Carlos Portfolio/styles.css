@@ -1,5 +1,6 @@
-body{
-    background-color: darkcyan;
+body, contactmeBody {
+    background: linear-gradient(to bottom right, #0066cc 0%, #800000 100%);
+    background-repeat: no-repeat;
 }
 
 .navigationMenu {
@@ -30,9 +31,10 @@ body{
 
 .titleContainer{
     display: flex;
-    background-color: red;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px;
     border: 8px double green;
     border-radius: 6px ;
     padding-left: 30px;
