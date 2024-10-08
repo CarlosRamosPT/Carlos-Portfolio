@@ -1,0 +1,41 @@
+body{
+    background-color: darkcyan;
+}
+
+.navigationMenu {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+    column-gap: 4rem;
+
+}
+
+.navigationMenu a {
+    border: 3px dotted yellow;
+    margin: 2px;
+    color: black;
+
+}
+
+.navigationMenu:hover {
+    color: brown;
+
+}
+
+.navigationMenu:active {
+    color:antiquewhite;
+}
+
+.titleContainer{
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    border: 8px double green;
+    border-radius: 6px ;
+    padding-left: 30px;
+    column-gap: 3rem;
+
+}
