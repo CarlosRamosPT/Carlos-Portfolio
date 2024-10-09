@@ -4,12 +4,15 @@ body, contactmeBody {
 }
 
 .navigationMenu {
+    background-color: linear-gradient(to bottom right, #0066cc 0%, #800000 100%) ;
     margin: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     row-gap: 4rem;
     column-gap: 4rem;
+    position: sticky;
+    top: 0;
 
 }
 
@@ -17,15 +20,17 @@ body, contactmeBody {
     border: 3px dotted yellow;
     margin: 2px;
     color: black;
+    background-color: blueviolet;
+
 
 }
 
-.navigationMenu:hover {
+.navigationMenu a:hover {
     color: brown;
 
 }
 
-.navigationMenu:active {
+.navigationMenu a:active {
     color:antiquewhite;
 }
 
@@ -40,4 +45,26 @@ body, contactmeBody {
     padding-left: 30px;
     column-gap: 3rem;
 
+}
+
+.contactmecontainer {
+    display: grid;
+}
+
+.carlosPicture {
+    width:600px;
+    height: 700px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.carlosDetails {
+    margin: 20px;
+    padding: 8px;
+    width: fit-content;
+    height: fit-content;
+    border: 4px double red ;
+    border-radius: 30%;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
