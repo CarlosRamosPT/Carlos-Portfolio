@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
 body, contactmeBody {
     background: linear-gradient(to bottom right, #0066cc 0%, #800000 100%);
     background-repeat: no-repeat;
@@ -7,7 +9,7 @@ body, contactmeBody {
     background-color: linear-gradient(to bottom right, #0066cc 0%, #800000 100%) ;
     margin: 4px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     row-gap: 4rem;
     column-gap: 4rem;
@@ -18,7 +20,10 @@ body, contactmeBody {
 
 .navigationMenu a {
     border: 3px dotted yellow;
+    border-radius: 40%;
+    font-family: "Sixtyfour Convergence", sans-serif;
     margin: 2px;
+    padding: 4px;
     color: black;
     background-color: blueviolet;
 
@@ -27,19 +32,22 @@ body, contactmeBody {
 
 .navigationMenu a:hover {
     color: brown;
+    text-decoration: none;
 
 }
 
 .navigationMenu a:active {
     color:antiquewhite;
+    text-decoration: wavy;
 }
 
-.titleContainer{
+.titleContainer, .mainContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px;
+    padding-bottom: 20px;
     border: 8px double green;
     border-radius: 6px ;
     padding-left: 30px;
