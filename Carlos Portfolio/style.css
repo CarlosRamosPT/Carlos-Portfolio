@@ -1,3 +1,8 @@
+/* :root {
+    font-size: 18px;
+}
+ */
+
 /* imported area */
 @import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
 /* background  starts here (shared between multiple pages) */
@@ -13,26 +18,53 @@ body, contactmeBody {
 .navigationMenu {
     background-color: linear-gradient(to bottom right, #0066cc 0%, #800000 100%) ;
     margin: 4px;
+    margin-top: 15px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     row-gap: 4rem;
     column-gap: 4rem;
     position: sticky;
-    top: 0;
+    top: 15px;
+    flex-wrap: wrap;
+}
+
+/* .navigationMenu a {
+    border: 3px double rgba( 0, 0, 0, 0.8);
+    border-radius: 50%;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    margin: 6px;
+    padding: 8px;
+    background-color: blueviolet;
+    text-decoration: none;
+
+
+} */
+
+.navlink {
+    border: 3px double rgba( 0, 0, 0, 0.8);
+    border-radius: 50%;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    margin: 6px;
+    padding: 8px;
+    background-color: blueviolet;
+    text-decoration: none;
+
 
 }
 
-.navigationMenu a {
-    border: 3px dotted yellow;
-    border-radius: 40%;
-    font-family: "Sixtyfour Convergence", sans-serif;
-    margin: 2px;
-    padding: 4px;
-    color: black;
-    background-color: blueviolet;
+.navlink a:last-child {
+    margin-left: auto;
+}
 
+.navlink a {
+    display:none;
+}
 
+.navlink a:hover {
+    display:block;
+    width: 50px;
+    height: 40px;
 }
 
 .navigationMenu a:hover {
@@ -99,8 +131,8 @@ box-shadow: 4px 10px 8px darkblue inset ;
 
 .contactmecontainer {
     display: grid;
-    grid-template-columns: 4fr 2fr;
-    grid-template-rows: repeat(8, 100px);
+    grid-template-columns: 4fr 2fr; 
+    grid-template-rows: repeat(8, 100px); 
 }
 
 .carlosPicture {
@@ -175,3 +207,5 @@ box-shadow: 4px 10px 8px darkblue inset ;
 /* finishes the contact me html */
 
 /* starts the projects html */
+
+/* ends the projects html */
